@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import {
   GET_MAILBOX,
   GET_MESSAGE,
@@ -6,7 +6,7 @@ import {
   GET_ALT_INBOX,
   GET_STATISTICS,
   GET_STATUS,
-} from './queries';
+} from "./queries.js";
 
 const baseUrl = 'https://api.maildrop.cc/graphql';
 
