@@ -1,0 +1,48 @@
+{
+  "name": "simple-maildrop",
+  "version": "0.1.0",
+  "description": "A simple Maildrop API wrapper",
+  "author": "Luiz Figueiredo <luiz@ponto308.jp>",
+  "license": "MIT",
+  "keywords": [
+    "Maildrop"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint",
+    "prepare": "npm run build",
+    "prepublishOnly": "pnpm test && pnpm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "homepage": "https://github.com/figueiredo2021/simple-maildrop#simple-maildrop",
+  "bugs": {
+    "url": "https://github.com/figueiredo2021/simple-maildrop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figueiredo2021/simple-maildrop.git"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "jest": "^29.6.1",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
