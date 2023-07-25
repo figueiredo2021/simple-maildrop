@@ -6,7 +6,7 @@ Get more information about Maildrop service visiting their website at
 
 ## Installation
 
-Install with `npm npm install --save simple-maildrop` or `pnpm add simple-maildrop`
+Install with `npm install --save simple-maildrop` or `pnpm add simple-maildrop`
 
 ## Usage
 
