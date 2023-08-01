@@ -1,5 +1,5 @@
 import axios from "axios";
-import Maildrop from "../src/index";
+import Maildrop from "../lib/index.js";
 
 jest.mock("axios");
 const mockedAxios = axios as jest.Mocked<typeof axios>;

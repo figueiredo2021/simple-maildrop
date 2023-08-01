@@ -15,9 +15,12 @@ export const GET_MESSAGE = gql`
   query GetMessage($mailbox: String!, $id: String!) {
     message(mailbox: $mailbox, id: $id) {
       id
+      date
+      mailfrom
       headerfrom
       subject
-      date
+      data
+      html
     }
   }
 `;
